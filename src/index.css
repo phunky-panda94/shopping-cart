@@ -11,6 +11,17 @@ body {
     border: 1px solid black;
 }
 
+button, input[type="submit"] {
+    color: #ffffff;
+    cursor: pointer;
+    /* background-color: gray; */
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-weight: 400;
+    padding: 7.5px;
+    transition: color .15s;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -21,18 +32,40 @@ img {
     width: 200px;
 }
 
-img:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+/* || COLOURS */
+.grey {
+    background-color:#acaca7;
 }
 
-/* flexbox */
+.green {
+    background-color: #80b24b;
+}
+
+.dark-green {
+    background-color: #4c843c;
+}
+
+/* || TYPOGRAPHY */
+
+.bold {
+    font-weight: 700
+}
+
+.large {
+    font-size: large;
+}
+
+/* || FLEXBOX */
 .flex {
     display: flex;
 }
 
 .flex-jc-c {
     justify-content: center;
+}
+
+.flex-jc-fe {
+    justify-content: flex-end;
 }
 
 .flex-jc-sb {
@@ -57,4 +90,8 @@ img:hover {
 
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+.flex-grow {
+    flex-grow: 1;
 }

@@ -14,24 +14,41 @@
     font-weight: 600;
 }
 
-.card > form > label > input[type='number'] {
+input[type='number'] {
     width: 40px;
-}
-
-.card > form > input[type='submit'] {
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4c843c;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-    font-weight: 400;
-    padding: 7.5px;
-    transition: color .15s;
 }
 
 .card > form > input[type='submit']:hover {
     background-color: #80b24b;
     transform: scale(1.05);
+}
+
+.card > img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.container {
+    height: 100vh;
+    flex: 1;
+}
+
+.box {
+    width: 90vw;
+}
+
+.box > button {
+    margin: 10px;
+}
+
+.item {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.item-details {
+    padding: 10px;
 }
 
 .link .badge {
@@ -43,15 +60,6 @@
     background: #4c843c;
     color: white;
     transform: scale(0.7);
-}
-
-.container {
-    height: 100vh;
-    flex: 1;
-}
-
-.box {
-    width: 90vw;
 }
 
 .link, .link:visited {

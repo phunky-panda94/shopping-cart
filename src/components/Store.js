@@ -8,13 +8,6 @@ function Store() {
             </div>
             <div className="box flex flex-row flex-wrap">
                 <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
             </div>
         </div>
     )
