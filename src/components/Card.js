@@ -1,6 +1,6 @@
 function Card() {
     return (
-        <div className="card flex flex-col flex-jc-se flex-ai-c">
+        <div className="card flex flex-col flex-ai-c">
             <img src="/images/ipad.jpg"></img>
             <form className="flex flex-row flex-jc-sb flex-ai-c">
                 <label for="qty">
