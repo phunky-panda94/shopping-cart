@@ -16,6 +16,16 @@ code {
     monospace;
 }
 
+img {
+    height: 200px;
+    width: 200px;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 /* flexbox */
 .flex {
     display: flex;
@@ -27,6 +37,10 @@ code {
 
 .flex-jc-sb {
     justify-content: space-between;
+}
+
+.flex-jc-se {
+    justify-content: space-evenly;
 }
 
 .flex-ai-c {

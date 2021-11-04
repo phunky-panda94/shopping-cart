@@ -1,17 +1,50 @@
+.card {
+    border: 2px solid grey;
+    border-radius: 1em;
+    height: 250px;
+    margin: 15px;
+    width: 250px;
+}
+
+.card > form {
+    width: 80%;
+}
+
+.card > form > label > span {
+    font-weight: 600;
+}
+
+.card > form > label > input[type='number'] {
+    width: 40px;
+}
+
+.card > form > input[type='submit'] {
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #80b24b;
+    border-radius: 1em;
+    font-weight: 600;
+    padding: 7.5px;
+}
+
 .link .badge {
     position: absolute;
     top: 0;
     right: 0;
     padding: 5px 12px;
     border-radius: 50%;
-    background: #80b24b;
+    background: #4c843c;
     color: white;
     transform: scale(0.7);
 }
 
 .container {
-    padding: 15px;
-    width: 80vw;
+    height: 100vh;
+    flex: 1;
+}
+
+.box {
+    width: 90vw;
 }
 
 .link, .link:visited {
