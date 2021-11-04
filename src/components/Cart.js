@@ -10,7 +10,7 @@ function Cart() {
                 <Item />
             </div>
             <div className="box flex flex-jc-fe">
-                <button className="dark-green">Checkout</button>
+                <button className="bg-dark-green">Checkout</button>
             </div>
         </div>
     )

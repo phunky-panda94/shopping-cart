@@ -14,7 +14,6 @@ body {
 button, input[type="submit"] {
     color: #ffffff;
     cursor: pointer;
-    /* background-color: gray; */
     border: 1px solid transparent;
     border-radius: 0.25rem;
     font-weight: 400;
@@ -33,16 +32,36 @@ img {
 }
 
 /* || COLOURS */
-.grey {
+.bg-grey {
     background-color:#acaca7;
 }
 
-.green {
+.bg-green {
     background-color: #80b24b;
 }
 
-.dark-green {
+.bg-dark-green {
     background-color: #4c843c;
+}
+
+.dark-grey {
+    color: #848484;
+}
+
+.grey {
+    color:#acaca7;
+}
+
+.green {
+    color: #80b24b;
+}
+
+.dark-green {
+    color: #4c843c;
+}
+
+.black {
+    color: #2c2c2c;
 }
 
 /* || TYPOGRAPHY */
@@ -66,6 +85,10 @@ img {
 
 .flex-jc-fe {
     justify-content: flex-end;
+}
+
+.flex-jc-sa {
+    justify-content: space-around;
 }
 
 .flex-jc-sb {

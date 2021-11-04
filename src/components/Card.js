@@ -7,7 +7,7 @@ function Card() {
                     <span>Qty: </span>
                     <input type="number" name="qty" defaultValue="1" min='1'></input>
                 </label>
-                <input className="dark-green" type="submit" value="Add to Cart"></input>
+                <input className="bg-dark-green" type="submit" value="Add to Cart"></input>
             </form>
         </div>
     )

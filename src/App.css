@@ -15,7 +15,12 @@
 }
 
 input[type='number'] {
+    padding: 5px;
     width: 40px;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+    height: 30px;
 }
 
 .card > form > input[type='submit']:hover, .box > button:hover {
@@ -38,7 +43,7 @@ input[type='number'] {
 }
 
 .box > button {
-    margin: 10px;
+    margin-top: 10px;
 }
 
 .item {
@@ -49,6 +54,11 @@ input[type='number'] {
 
 .item-details {
     padding: 10px;
+}
+
+.item-details > .material-icons-outlined:hover {
+    color: #2c2c2c;
+    cursor: pointer;
 }
 
 .link .badge {

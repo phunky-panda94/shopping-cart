@@ -1,19 +1,19 @@
 function Item() {
     return (
         <div className="item flex flex-row flex-jc-sb">
-            <img></img>
+            <img src="/images/ipad.jpg"></img>
             <div className="item-details flex flex-col flex-grow flex-jc-se">
-                <span className="bold large">Product Name</span>
-                <span>Brand</span>
+                <span className="bold large">iPad Pro</span>
+                <span>Apple</span>
                 <i>In Stock</i>
+                <span className="bold large">$18.99</span>
                 <label for="qty">
                     <span>Qty: </span>
                     <input type="number" name="qty" defaultValue="1" min='1'></input>
                 </label>
             </div>
-            <div className="item-details flex flex-col flex-ai-c flex-jc-se">
-                <span className="bold large">$18.99</span>
-                <button className="grey">Remove</button>
+            <div className="item-details flex flex-col flex-ai-c flex-jc-c">
+                <span className="dark-grey material-icons-outlined">remove_shopping_cart</span>
             </div>
         </div>
     )
