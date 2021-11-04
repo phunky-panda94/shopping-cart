@@ -21,10 +21,17 @@
 .card > form > input[type='submit'] {
     color: #ffffff;
     cursor: pointer;
-    background-color: #80b24b;
-    border-radius: 1em;
-    font-weight: 600;
+    background-color: #4c843c;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-weight: 400;
     padding: 7.5px;
+    transition: color .15s;
+}
+
+.card > form > input[type='submit']:hover {
+    background-color: #80b24b;
+    transform: scale(1.05);
 }
 
 .link .badge {
