@@ -1,4 +1,5 @@
 import Card from "./Card";
+import Products from '../Products';
 
 function Store() {
     return (
@@ -7,7 +8,9 @@ function Store() {
                 <h1>Tech</h1>
             </div>
             <div className="box flex flex-row flex-wrap">
-                <Card />
+                {Products.map(product => {
+                    return <Card key={Date.now()} product={product}/>
+                })}
             </div>
         </div>
     )

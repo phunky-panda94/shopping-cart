@@ -5,7 +5,7 @@ function Item() {
             <div className="item-details flex flex-col flex-grow flex-jc-se">
                 <span className="bold large">iPad Pro</span>
                 <span>Apple</span>
-                <i>In Stock</i>
+                <i className="dark-green">In Stock</i>
                 <span className="bold large">$18.99</span>
                 <label for="qty">
                     <span>Qty: </span>
