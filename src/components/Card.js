@@ -7,7 +7,7 @@ function Card(props) {
     function changeQty(event) {
         setQty(event.target.value);
     }
-    
+    // TODO: disabled add to cart button if out of stock 
     return (
         <div className="card flex flex-col flex-ai-c">
             <img alt={props.product.name} src={props.product.image}></img>

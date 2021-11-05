@@ -6,19 +6,28 @@ function Store(props) {
     const {cart, setCart} = props;
 
     function addToCart(event, qty, product) {
+
         event.preventDefault();
 
         let itemId = `${product.brand}-${product.name}`
-        let item = {
-            details: product,
-            qty: qty
+        let item;
+
+        if (cart.get(itemId) != null) {
+            item = cart.get(itemId);
+            item.qty += parseInt(qty);
+        } else {
+            item = {
+                details: product,
+                qty: qty
+            }
         }
 
         setCart(new Map(cart.set(itemId, item)));
         localStorage.setItem('cart', JSON.stringify(Object.fromEntries(cart)));
 
         window.alert(`${qty} ${product.name} added to your shopping cart!`);
-
+        event.target.reset();
+        
     }
     
     return (

@@ -37,7 +37,7 @@ function App() {
                         <Store cart={cart} setCart={setCart}/>
                     </Route>
                     <Route path="/cart">
-                        <Cart cart={cart} setCart={setCart}/>
+                        <Cart cart={cart} setCart={setCart} setNumberOfItems={setNumberOfItems}/>
                     </Route>
                 </Switch>
             </div>
