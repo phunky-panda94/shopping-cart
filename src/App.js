@@ -22,7 +22,7 @@ function App() {
                 <Navbar numberOfItems={cart.size}/>
                 <Switch>
                     <Route exact path="/">
-                        <Store setCart={setCart}/>
+                        <Store cart={cart} setCart={setCart}/>
                     </Route>
                     <Route path="/cart">
                         <Cart cart={cart} setCart={setCart}/>
