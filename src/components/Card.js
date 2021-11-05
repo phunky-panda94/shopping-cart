@@ -23,6 +23,9 @@ function Card(props) {
         }
 
         localStorage.setItem('cart', JSON.stringify(Object.fromEntries(cart)));
+
+        window.alert(`${qty} ${props.product.name} added to your shopping cart!`);
+
     }
 
     function changeQty(event) {
@@ -31,7 +34,7 @@ function Card(props) {
     
     return (
         <div className="card flex flex-col flex-ai-c">
-            <img src={props.product.image}></img>
+            <img alt={props.product.name} src={props.product.image}></img>
             <form className="flex flex-row flex-jc-sb flex-ai-c" onSubmit={addToCart}>
                 <label htmlFor="qty">
                     <span>Qty: </span>

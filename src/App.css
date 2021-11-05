@@ -45,10 +45,20 @@ input[type='number']::-webkit-inner-spin-button {
     margin-top: 10px;
 }
 
+button:disabled, button:disabled:hover {
+    background-color: #848484;
+    cursor: not-allowed;
+    transform: none;
+}
+
 .item {
     border: 2px solid grey;
     border-radius: 1em;
     padding: 15px;
+}
+
+.item + .item {
+    margin-top: 10px;
 }
 
 .item-details {
