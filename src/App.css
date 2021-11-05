@@ -30,7 +30,6 @@ input[type='number']::-webkit-inner-spin-button {
 
 .card > img:hover {
     cursor: pointer;
-    transform: scale(1.05);
 }
 
 .container {
@@ -47,8 +46,8 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .item {
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 2px solid grey;
+    border-radius: 1em;
     padding: 15px;
 }
 
