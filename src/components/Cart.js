@@ -1,5 +1,4 @@
 import Item from "./Item";
-import { useEffect } from 'react';
 
 function Cart(props) {
 
@@ -21,6 +20,8 @@ function Cart(props) {
         }
 
     }
+
+    // TODO: update number of items in cart upon changing quantity
 
     return (
         <div className="container flex flex-col flex-ai-c">

@@ -8,7 +8,8 @@ import Navbar from './components/Navbar';
 function App() {
     
     const [cart, setCart] = useState(new Map());
-    
+    const [numberOfItems, setNumberOfItems] = useState(0);
+
     // fetch shopping cart items upon mounting 
     useEffect(() => {
         if (localStorage.getItem('cart') != null) {
@@ -16,10 +17,21 @@ function App() {
         }
     }, []);
 
+    useEffect(() => {
+        let numberOfItems = 0;
+
+        for (let item of cart.values()) {
+            numberOfItems += parseInt(item.qty);
+        }
+        
+        setNumberOfItems(numberOfItems);
+
+    }, [cart])
+
     return (
         <Router>
             <div className="container flex flex-col">
-                <Navbar numberOfItems={cart.size}/>
+                <Navbar numberOfItems={numberOfItems}/>
                 <Switch>
                     <Route exact path="/">
                         <Store cart={cart} setCart={setCart}/>
